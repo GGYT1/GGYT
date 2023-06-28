@@ -1,0 +1,1 @@
+If you put themes on icons in Windows, then this program may be able to help you. It will also help restore the system.
