@@ -1,1 +1,3 @@
-If you put themes on icons in Windows, then this program may be able to help you. It will also help restore the system.
+This program will help you restore Windows if you have damaged system files.
+The program will help ONLY if you can boot into the OS
+NOT A VIRUS
