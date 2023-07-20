@@ -1,1 +1,0 @@
-Copy folder LOL_VIRUS to C:\
