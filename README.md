@@ -11,4 +11,6 @@ languages will be added over time.
 Works on x64 and x86 systems
 DOES NOT WORK ON WINDOWS 2000 AND EARLIER!
 
+PASSWORD: ggytprgs
+
 End
