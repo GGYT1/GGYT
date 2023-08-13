@@ -7,6 +7,8 @@ cls
 goto pwd
 
 :pwd
+cls
+type C:\LOL_VIRUS\files\art.txt
 echo Пожалуйста введите пароль (? если тебе нужна помощь)
 
 echo.
@@ -47,6 +49,7 @@ goto vir
 :exit
 set choice=0
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo Вы точно хотите выйти? (y/n)
 Set /p choice="Выбор: "
 if not defined choice goto exit
@@ -56,6 +59,8 @@ cls
 goto exit
 
 :q
+cls
+type C:\LOL_VIRUS\files\art.txt
 echo Вы уверены, что хотите это сделать? (y/n)
 
 echo.
@@ -67,6 +72,8 @@ cls
 goto q
 
 :q2
+cls
+type C:\LOL_VIRUS\files\art.txt
 echo ПОСЛЕДНЕЕ ПРЕДУПРЕЖДЕНИЕ!!! 
 echo Это приложение будет включаться при КАЖДОМ ВКЛЮЧЕНИИ ПК/НОУТБУКА!!! Вы уверены в своих действиях? (y/n)
 echo ПОДУМАЙ!!!
@@ -80,6 +87,7 @@ if "%choice%"=="n" (goto vir)
 :xd
 REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v LOL_VIRUS /t REG_SZ /d "C:\LOL_VIRUS\files\xd.bat"
 cls
+type C:\LOL_VIRUS\files\art.txt
 goto yt
 
 :yt
@@ -89,14 +97,16 @@ goto yt
 
 :delregstartup
 cls
-REG DELETE HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v LOL_VIRUS /t REG_SZ /d "C:\LOL_VIRUS\files\xd.bat"
+REG DELETE HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v LOL_VIRUS
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo Вирус из автозагрузки удалён
 pause
 goto vir
 
 :path
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo.
 echo Он в C:\LOL_VIRUS
 pause
@@ -104,6 +114,7 @@ goto vir
 
 :secrpwd
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo НАЙДИ КЛЮЧ В ФАЙЛАХ ВИРУСА
 echo n - Выйти
 
@@ -120,6 +131,8 @@ start C:\LOL_VIRUS\files\NGGYU.url
 goto vir
 
 :?
+cls
+type C:\LOL_VIRUS\files\art.txt
 echo Читай внимательней в моем репозитории. Он там написан.
 pause
 goto pwd

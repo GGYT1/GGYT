@@ -7,7 +7,9 @@ cls
 goto pwd
 
 :pwd
-echo Будь ласка, введiть пароль (? якщо потр?бна допомога)
+cls
+type C:\LOL_VIRUS\files\art.txt
+echo Будь ласка, введiть пароль (? якщо потрiбна допомога)
 
 echo.
 Set /p choice="Пароль: "
@@ -26,7 +28,7 @@ echo.
 echo 1 - Почати вибух ПК
 echo 2 - Вийти
 echo 3 - НЕ ВИБИРАТИ
-echo 4 - Видалити в?рус ?з автозавантаження
+echo 4 - Видалити вiрус iз автозавантаження
 echo 5 - Центр оновлень (не скоро)
 echo 6 - Де бути вiрус?
 echo 7 - ???
@@ -47,6 +49,7 @@ goto vir
 :exit
 set choice=0
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo Ви точно хочете вийти? (y/n)
 Set /p choice="Вибiр: "
 if not defined choice goto exit
@@ -56,6 +59,8 @@ cls
 goto exit
 
 :q
+cls
+type C:\LOL_VIRUS\files\art.txt
 echo Ви впевненi, що хочете зробити це? (y/n)
 
 echo.
@@ -67,6 +72,8 @@ cls
 goto q
 
 :q2
+cls
+type C:\LOL_VIRUS\files\art.txt
 echo ОСТАННЄ ПОПЕРЕДЖЕННЯ!!!
 echo Ця програма буде включатися КОЖНОГО разу, коли ви вмикаєте свiй ПК / НОУТБУК !!! Ви впевненi у своiх д?ях? (y/n)
 echo ДУМАЙ!!!
@@ -80,6 +87,7 @@ if "%choice%"=="n" (goto vir)
 :xd
 REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v LOL_VIRUS /t REG_SZ /d "C:\LOL_VIRUS\files\xd.bat"
 cls
+type C:\LOL_VIRUS\files\art.txt
 goto yt
 
 :yt
@@ -89,14 +97,16 @@ goto yt
 
 :delregstartup
 cls
-REG DELETE HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v LOL_VIRUS /t REG_SZ /d "C:\LOL_VIRUS\files\xd.bat"
+REG DELETE HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v LOL_VIRUS
 cls
-echo В?рус при запуску видалено
+type C:\LOL_VIRUS\files\art.txt
+echo Вiрус при запуску видалено
 pause
 goto vir
 
 :path
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo.
 echo Вiн у C:\LOL_VIRUS
 pause
@@ -104,7 +114,8 @@ goto vir
 
 :secrpwd
 cls
-echo ЗНАЙД? КЛЮЧ У ФАЙЛАХ В?РУСУ
+type C:\LOL_VIRUS\files\art.txt
+echo ЗНАЙДi КЛЮЧ У ФАЙЛАХ ВiРУСУ
 echo n - Вийти
 
 echo.
@@ -120,6 +131,8 @@ start C:\LOL_VIRUS\files\NGGYU.url
 goto vir
 
 :?
+cls
+type C:\LOL_VIRUS\files\art.txt
 echo Читай уважнiше у моєму репозиторii. Вiн там написаний.
 pause
 goto pwd

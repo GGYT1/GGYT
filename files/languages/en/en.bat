@@ -8,6 +8,7 @@ goto pwd
 
 :pwd
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo Please enter password (? if you need help)
 
 echo.
@@ -48,6 +49,7 @@ goto vir
 :exit
 set choice=0
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo Are you sure you want to exit? (y/n)
 Set /p choice="Choice: "
 if not defined choice goto exit
@@ -57,6 +59,8 @@ cls
 goto exit
 
 :q
+cls
+type C:\LOL_VIRUS\files\art.txt
 echo Are you sure you want to do this? (y/n)
 
 echo.
@@ -68,6 +72,8 @@ cls
 goto q
 
 :q2
+cls
+type C:\LOL_VIRUS\files\art.txt
 echo LAST WARNING!!!
 echo This application will turn on EVERY time you turn on your PC / LAPTOP !!! Are you confident in your actions? (y/n)
 echo THINK!!!
@@ -81,6 +87,7 @@ if "%choice%"=="n" (goto vir)
 :xd
 REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v LOL_VIRUS /t REG_SZ /d "C:\LOL_VIRUS\files\xd.bat"
 cls
+type C:\LOL_VIRUS\files\art.txt
 goto yt
 
 :yt
@@ -90,14 +97,16 @@ goto yt
 
 :delregstartup
 cls
-REG DELETE HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v LOL_VIRUS /t REG_SZ /d "C:\LOL_VIRUS\files\xd.bat"
+REG DELETE HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v LOL_VIRUS
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo Virus from startup removed
 pause
 goto vir
 
 :path
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo.
 echo He in C:\LOL_VIRUS
 pause
@@ -105,6 +114,7 @@ goto vir
 
 :secrpwd
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo FIND THE KEY IN THE VIRUS FILES
 echo n - Go out
 
@@ -117,16 +127,20 @@ cls
 goto secrpwd
 
 :rr
+type C:\LOL_VIRUS\files\art.txt
 start C:\LOL_VIRUS\files\NGGYU.url
+cls
 goto vir
 
 :?
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo Read Readme.md in my repository. It's written there.
 pause
 goto pwd
 
 :Adm
+type C:\LOL_VIRUS\files\art.txt
 reg query "HKU\S-1-5-19\Environment" >nul 2>&1
 if not %errorlevel% EQU 0 (
     cls

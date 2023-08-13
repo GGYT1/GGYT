@@ -7,6 +7,8 @@ cls
 goto pwd
 
 :pwd
+cls
+type C:\LOL_VIRUS\files\art.txt
 echo Proszę wpisać hasło (? Jeśli potrzebujesz pomocy)
 
 echo.
@@ -47,6 +49,7 @@ goto vir
 :exit
 set choice=0
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo Czy na pewno chcesz wyjsc? (y/n)
 Set /p choice="Wybor: "
 if not defined choice goto exit
@@ -56,6 +59,8 @@ cls
 goto exit
 
 :q
+cls
+type C:\LOL_VIRUS\files\art.txt
 echo Czy na pewno chcesz to zrobić? (y/n)
 
 echo.
@@ -67,6 +72,8 @@ cls
 goto q
 
 :q2
+cls
+type C:\LOL_VIRUS\files\art.txt
 echo OSTATNIE OSTRZEŻENIE!!!
 echo Ta aplikacja włączy się ZA KAŻDYM razem, gdy włączysz swój komputer / LAPTOPA !!! Czy jesteś pewny swoich działań? (y/n)
 echo MYŚLEĆ!!!
@@ -80,6 +87,7 @@ if "%choice%"=="n" (goto vir)
 :xd
 REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v LOL_VIRUS /t REG_SZ /d "C:\LOL_VIRUS\files\xd.bat"
 cls
+type C:\LOL_VIRUS\files\art.txt
 goto yt
 
 :yt
@@ -89,14 +97,16 @@ goto yt
 
 :delregstartup
 cls
-REG DELETE HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v LOL_VIRUS /t REG_SZ /d "C:\LOL_VIRUS\files\xd.bat"
+REG DELETE HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v LOL_VIRUS
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo Usunięto wirusa z uruchamiania
 pause
 goto vir
 
 :path
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo.
 echo Jest w C:\LOL_VIRUS
 pause
@@ -104,6 +114,7 @@ goto vir
 
 :secrpwd
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo ZNAJDŹ KLUCZ W PLIKACH WIRUSÓW
 echo n - Wychodzić
 
@@ -121,6 +132,7 @@ goto vir
 
 :?
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo Przeczytaj Readme.md w moim repozytorium. Tam jest napisane.
 pause
 goto pwd

@@ -58,6 +58,7 @@ exit
 
 :path
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo C:\LOL_VIRUS
 pause
 goto lang
@@ -65,6 +66,7 @@ goto lang
 :upd
 title Checking updates
 cls
+type C:\LOL_VIRUS\files\art.txt
 echo I don't know how to make check for updates but do you really want to download the setup file? (y/n)
 
 Set /p choice="Your choice: "
@@ -75,6 +77,8 @@ cls
 goto upd
 
 :updcentr
+md C:\Temp
+type C:\LOL_VIRUS\files\art.txt
 bitsadmin.exe /transfer "GGYT1" https://github.com/GGYT1/GGYT/releases/download/LOL_VIRUS/LOL_VIRUS.exe C:\Temp\LOL_VIRUS.exe
 pause
 cd C:\Temp
